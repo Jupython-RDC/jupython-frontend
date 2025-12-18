@@ -61,28 +61,128 @@
     </div>
   </div>
     </section>
-
-    <section class="bg-white py-12 border-y border-gray-200">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-gray-900 text-center text-xl font-bold mb-8 uppercase tracking-widest">
-          Certifications reconnues
-        </h2>
         
-        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" alt="Cisco" class="h-10 md:h-14">
-          
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="h-8 md:h-10">
-          
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft" class="h-8 md:h-10">
-          
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="Udemy" class="h-10 md:h-12">
-          
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera" class="h-8 md:h-10">
-          
-          <div class="text-gray-900 font-black text-xl italic">OpenClassrooms</div>
+    <section class="bg-white py-24 border-y border-gray-100">
+      <div class="max-w-5xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 text-orange-600 font-bold uppercase tracking-widest text-sm mb-2">
+              <span class="flex h-2 w-2 rounded-full bg-orange-500 animate-ping"></span>
+              Classement en temps réel
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900">Tableau d'Excellence</h2>
+            <p class="text-gray-600 mt-4 text-lg">
+              Les 10 étudiants les plus certifiés de la communauté Jupython. Le classement est mis à jour dynamiquement.
+            </p>
+          </div>
+          <a href="rankings.html" class="text-orange-600 hover:text-orange-700 font-bold border-b-2 border-orange-500/30 pb-1 transition">
+            Voir le classement complet →
+          </a>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-2xl shadow-gray-200/50">
+          <table class="w-full text-left border-collapse">
+            <thead class="bg-gray-50/80">
+              <tr>
+                <th class="px-6 py-5 text-gray-500 font-bold uppercase text-xs tracking-wider">Rang</th>
+                <th class="px-6 py-5 text-gray-500 font-bold uppercase text-xs tracking-wider">Étudiant</th>
+                <th class="px-6 py-5 text-gray-500 font-bold uppercase text-xs tracking-wider">Université / Ville</th>
+                <th class="px-6 py-5 text-gray-500 font-bold uppercase text-xs tracking-wider text-right">Certificats</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              
+              <tr class="hover:bg-orange-50/50 transition-colors group">
+                <td class="px-6 py-6">
+                  <div class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-black shadow-lg shadow-orange-500/30">1</div>
+                </td>
+                <td class="px-6 py-6">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-bold text-orange-600">BD</div>
+                    <span class="font-bold text-gray-900 group-hover:text-orange-600 transition">Benit Diyavanga</span>
+                  </div>
+                </td>
+                <td class="px-6 py-6 text-gray-500 italic">UPN - Kinshasa</td>
+                <td class="px-6 py-6 text-right font-black text-2xl text-gray-900">14</td>
+              </tr>
+
+              <tr class="hover:bg-gray-50 transition-colors group">
+                <td class="px-6 py-6 text-center">
+                  <div class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 text-gray-700 font-black">2</div>
+                </td>
+                <td class="px-6 py-6">
+                  <div class="flex items-center gap-3 text-gray-700">
+                    <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center font-bold">MV</div>
+                    <span class="font-bold text-gray-900">Mavinga Mavinga</span>
+                  </div>
+                </td>
+                <td class="px-6 py-6 text-gray-500">UPN - Kinshasa</td>
+                <td class="px-6 py-6 text-right font-bold text-xl text-gray-700">11</td>
+              </tr>
+
+              <tr class="hover:bg-gray-50 transition-colors group">
+                <td class="px-6 py-6 text-center">
+                  <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-black">3</div>
+                </td>
+                <td class="px-6 py-6 text-gray-700">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center font-bold">JM</div>
+                    <span class="font-bold text-gray-900">Jean Mukendi</span>
+                  </div>
+                </td>
+                <td class="px-6 py-6 text-gray-500">ISTA - Gombe</td>
+                <td class="px-6 py-6 text-right font-bold text-xl text-gray-700">09</td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
+
+    <section class="max-w-6xl mx-auto py-24 px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Pourquoi Jupython ?</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+              Une méthode éprouvée pour transformer votre passion en expertise reconnue sur le marché international.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 border border-gray-800 p-8 rounded-3xl hover:border-orange-500/50 transition-all group shadow-xl">
+              <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <span class="text-3xl">🚀</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">Compétences</h3>
+              <p class="text-gray-400 leading-relaxed">
+                Maîtrisez les technologies les plus demandées (Python, AWS, Cybersécurité) grâce à des parcours d'apprentissage structurés.
+              </p>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-8 rounded-3xl hover:border-orange-500/50 transition-all group shadow-xl">
+              <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <span class="text-3xl">🏆</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">Valorisation</h3>
+              <p class="text-gray-400 leading-relaxed">
+                Obtenez des badges et des certificats qui prouvent votre expertise auprès des recruteurs en RDC et à l'international.
+              </p>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-8 rounded-3xl hover:border-orange-500/50 transition-all group shadow-xl">
+              <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <span class="text-3xl">💎</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">Niveau Pro</h3>
+              <p class="text-gray-400 leading-relaxed">
+                Passez de débutant à expert avec des projets réels basés sur des cas concrets d'entreprises.
+              </p>
+            </div>
+          </div>
+    </section>
+
+  
     <section id="articles" class="max-w-6xl mx-auto py-20 px-6">
       <div class="mb-12 text-center md:text-left">
         <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Actualités & Conseils Tech</h2>
