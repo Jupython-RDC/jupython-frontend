@@ -3,84 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jupython - Accueil</title>
+  <title>Jupython - L'intelligence numérique au service de l'Afrique</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optionnel : ajout d'une transition douce pour le défilement */
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body>
-  <header class="bg-gray-900 shadow">
-    <div class="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-xl border-b border-gray-800">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
       <div class="flex items-center gap-3">
-        <div class="bg-gradient-to-tr from-orange-400 to-orange-600 text-black font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl">J</div>
-        <span class="text-white font-extrabold text-lg tracking-wide">Jupython</span>
+        <div class="bg-gradient-to-tr from-orange-400 to-orange-600 text-black font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl shadow-lg shadow-orange-500/20">J</div>
+        <span class="text-white font-extrabold text-xl tracking-tight">Jupython</span>
       </div>
-      <nav class="flex gap-2 flex-wrap">
-        <a href="index.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Accueil</a>
-        <a href="about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
-        <a href="projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
-        <a href="academy/login.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Academy</a>
-        <a href="rankings.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Classements</a>
-        <a href="courses.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Formations</a>
-        <a href="contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
+      <nav class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="text-orange-500 font-semibold transition">Accueil</a>
+        <a href="about.html" class="text-gray-400 hover:text-orange-400 transition">À propos</a>
+        <a href="projects.html" class="text-gray-400 hover:text-orange-400 transition">Projets</a>
+        <a href="academy/login.html" class="text-gray-400 hover:text-orange-400 transition">Academy</a>
+        <a href="rankings.html" class="text-gray-400 hover:text-orange-400 transition">Classements</a>
+        <a href="contact.html" class="text-gray-400 hover:text-orange-400 transition">Contact</a>
       </nav>
-      <a href="academy/login.html" class="ml-2 bg-orange-500 text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-orange-600 transition">Connecter</a>
+      <a href="academy/login.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-bold shadow-lg hover:bg-orange-600 hover:-translate-y-0.5 transition-all">Connecter</a>
     </div>
   </header>
 
-  <main class="bg-gray-950 min-h-screen py-12 px-4">
-    <section class="max-w-5xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-2">Actualités &amp; Conseils Tech</h2>
-      <p class="text-gray-400 text-center mb-8">Découvrez nos articles sur les certifications, les technologies et les opportunités dans le secteur IT</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col">
-          <div class="text-xs text-orange-300 mb-2">🔹 Dr Kasongo Muteba &nbsp;|&nbsp; 15/11/2024</div>
-          <h3 class="text-lg font-bold text-white mb-2">Comment réussir vos certifications IT</h3>
-          <p class="text-gray-300 flex-1">Découvrez les meilleures stratégies pour obtenir vos certifications professionnelles et booster votre carrière.</p>
-          <a class="mt-4 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg transition text-center" href="#">Lire l'article →</a>
-        </div>
-        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col">
-          <div class="text-xs text-orange-300 mb-2">🔹 Marie Kalala &nbsp;|&nbsp; 10/11/2024</div>
-          <h3 class="text-lg font-bold text-white mb-2">L'importance des certifications pour l'Afrique</h3>
-          <p class="text-gray-300 flex-1">Les certifications professionnelles peuvent transformer l'avenir de la jeunesse africaine dans le secteur technologique.</p>
-          <a class="mt-4 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg transition text-center" href="#">Lire l'article →</a>
-        </div>
-        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col">
-          <div class="text-xs text-orange-300 mb-2">🔹 Jean Mukendi &nbsp;|&nbsp; 05/11/2024</div>
-          <h3 class="text-lg font-bold text-white mb-2">Top 5 des plateformes de certification gratuites</h3>
-          <p class="text-gray-300 flex-1">Découvrez les meilleures plateformes où vous pouvez obtenir des certifications reconnues gratuitement.</p>
-          <a class="mt-4 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg transition text-center" href="#">Lire l'article →</a>
-        </div>
-      </div>
+  <main>
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 pb-16 px-6">
+  
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gray-950/70 z-10"></div> 
+    
+    <img src="images/hero-bg.png" 
+         alt="Background Jupython" 
+         class="w-full h-full object-cover object-center transition-opacity duration-500"
+         onerror="this.style.display='none'"> </div>
+  
+  <div class="relative z-20 max-w-5xl mx-auto text-center">
+    <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight text-white">
+      L'intelligence numérique <br>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+        au service de l'Afrique
+      </span>
+    </h1>
+    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+      Rejoignez la première plateforme dédiée aux certifications IT et à l'excellence technologique en RDC.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="bg-orange-500 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/40">
+        Commencer maintenant
+      </a>
+      <a href="#articles" class="bg-gray-900/50 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition-all border border-gray-700">
+        Voir les actualités
+      </a>
+    </div>
+  </div>
     </section>
 
-    <footer class="bg-gray-900 mt-16 py-10">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-        <div>
-          <h4 class="text-orange-400 font-bold mb-2">À propos</h4>
-          <ul class="text-gray-400 space-y-1">
-            <li>Jupython RDC</li>
-            <li>Projet éducatif</li>
-            <li>Fabriqué en Afrique</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-orange-400 font-bold mb-2">Saisies</h4>
-          <ul class="text-gray-400 space-y-1">
-            <li>Blog</li>
-            <li>Classes</li>
-            <li>Certifications</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-orange-400 font-bold mb-2">Contact</h4>
-          <ul class="text-gray-400 space-y-1">
-            <li>contact@jupython.cd</li>
-            <li>Kinshasa - UPN</li>
-            <li>Facebook • Instagram • YouTube</li>
-          </ul>
-        </div>
+    <section id="articles" class="max-w-6xl mx-auto py-20 px-6">
+      <div class="mb-12 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Actualités & Conseils Tech</h2>
+        <div class="h-1.5 w-20 bg-orange-500 rounded-full mx-auto md:mx-0"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl">Découvrez nos articles sur les certifications, les technologies et les opportunités dans le secteur IT.</p>
       </div>
-      <div class="text-center text-gray-500 mt-8">© Jupython 2025. Tous droits réservés.</div>
-    </footer>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-gray-900 border border-gray-800 rounded-2xl shadow-2xl p-6 flex flex-col hover:border-orange-500/50 transition-all group">
+          <div class="text-xs font-bold text-orange-400 uppercase tracking-widest mb-3">Certification</div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition">Comment réussir vos certifications IT</h3>
+          <p class="text-gray-400 flex-1 text-sm leading-relaxed">Découvrez les meilleures stratégies pour obtenir vos certifications professionnelles et booster votre carrière.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
+            <span class="text-xs text-gray-500">Dr Kasongo Muteba</span>
+            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+          </div>
+        </article>
+
+        <article class="bg-gray-900 border border-gray-800 rounded-2xl shadow-2xl p-6 flex flex-col hover:border-orange-500/50 transition-all group">
+          <div class="text-xs font-bold text-orange-400 uppercase tracking-widest mb-3">Impact</div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition">L'importance des certifications pour l'Afrique</h3>
+          <p class="text-gray-400 flex-1 text-sm leading-relaxed">Les certifications professionnelles peuvent transformer l'avenir de la jeunesse africaine dans le secteur technologique.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
+            <span class="text-xs text-gray-500">Marie Kalala</span>
+            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+          </div>
+        </article>
+
+        <article class="bg-gray-900 border border-gray-800 rounded-2xl shadow-2xl p-6 flex flex-col hover:border-orange-500/50 transition-all group">
+          <div class="text-xs font-bold text-orange-400 uppercase tracking-widest mb-3">Ressources</div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition">Top 5 plateformes gratuites</h3>
+          <p class="text-gray-400 flex-1 text-sm leading-relaxed">Découvrez les meilleures plateformes où vous pouvez obtenir des certifications reconnues gratuitement.</p>
+          <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
+            <span class="text-xs text-gray-500">Jean Mukendi</span>
+            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <footer class="bg-gray-900 border-t border-gray-800 py-16">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-6">
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-orange-500 text-black font-bold rounded-lg w-8 h-8 flex items-center justify-center">J</div>
+          <span class="text-white font-extrabold text-lg">Jupython</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Propulser le talent numérique africain vers des standards mondiaux.
+        </p>
+      </div>
+      
+      <div>
+        <h4 class="text-white font-bold mb-6">À propos</h4>
+        <ul class="text-gray-400 space-y-3 text-sm">
+          <li><a href="#" class="hover:text-orange-400 transition">Jupython RDC</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Projet éducatif</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Fabriqué en Afrique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Ressources</h4>
+        <ul class="text-gray-400 space-y-3 text-sm">
+          <li><a href="#" class="hover:text-orange-400 transition">Blog</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Classes</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Certifications</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Contact</h4>
+        <ul class="text-gray-400 space-y-3 text-sm">
+          <li class="flex items-center gap-2"><span>📧</span> contact@jupython.cd</li>
+          <li class="flex items-center gap-2"><span>📍</span> Kinshasa - UPN</li>
+          <li class="flex gap-4 mt-4 text-xl">
+            <a href="#" class="hover:text-orange-500 transition">f</a>
+            <a href="#" class="hover:text-orange-500 transition">t</a>
+            <a href="#" class="hover:text-orange-500 transition">y</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+      © Jupython 2025. Tous droits réservés.
+    </div>
+  </footer>
+
 </body>
 </html>
