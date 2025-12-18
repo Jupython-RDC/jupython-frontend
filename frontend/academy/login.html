@@ -1,67 +1,88 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Connexion - Jupython Academy</title>
+  <title>Se Connecter - Jupython</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { display: flex; flex-direction: column; min-height: screen; }
+    main { flex-grow: 1; }
+  </style>
 </head>
-<body>
-  <header class="bg-gray-900 shadow">
-    <div class="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
-      <div class="flex items-center gap-3">
-        <div class="bg-gradient-to-tr from-orange-400 to-orange-600 text-black font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl">J</div>
-        <span class="text-white font-extrabold text-lg tracking-wide">Jupython</span>
-      </div>
-      <nav class="flex gap-2 flex-wrap">
-        <a href="/frontend/index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Accueil</a>
-        <a href="/frontend/about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
-        <a href="/frontend/projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
-        <a href="/frontend/academy/login.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Academy</a>
-        <a href="/frontend/rankings.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Classements</a>
-        <a href="/frontend/courses.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Formations</a>
-        <a href="/frontend/contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
-      </nav>
-      <a href="/frontend/academy/login.html" class="ml-2 bg-orange-500 text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-orange-600 transition">Connecter</a>
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="bg-white py-4 px-6 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-2 group">
+        <div class="bg-black text-white font-bold rounded p-1 w-8 h-8 flex items-center justify-center text-xs">J</div>
+        <span class="text-black font-extrabold text-xl group-hover:text-orange-500 transition">Jupython</span>
+      </a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-orange-500 transition font-semibold">← Retour à l'accueil</a>
     </div>
   </header>
 
-  <main class="min-h-screen flex items-center justify-center bg-gray-950 py-12 px-4">
-    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
-      <h1 class="text-2xl font-bold text-gray-900 mb-2 text-center">Connexion</h1>
-      <p class="text-gray-500 text-center mb-6">Accédez à votre espace Jupython Academy</p>
-      <form method="post" action="/login" class="space-y-4">
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-          <input type="email" id="email" name="email" placeholder="votre@email.com" required class="input input-bordered w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 bg-white" />
-        </div>
-        <div>
-          <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Mot de passe</label>
-          <input type="password" id="password" name="password" placeholder="Votre mot de passe" required class="input input-bordered w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 bg-white" />
-        </div>
-        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-lg shadow transition">Se connecter</button>
-      </form>
-      <div class="mt-4 text-center text-sm text-gray-600">
-        Pas encore de compte ? <a href="register.html" class="text-orange-500 hover:underline font-semibold">Inscrivez-vous</a>
+  <main class="relative flex items-center justify-center py-20 px-4">
+    <div class="absolute inset-0 z-0">
+      <img src="../images/log.png" alt="Tech Studio" class="w-full h-full object-cover brightness-[0.4]">
+      <div class="absolute inset-0 bg-teal-950/20 backdrop-blur-[1px]"></div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-[480px] bg-white rounded-[2.5rem] shadow-2xl p-10 md:p-14 text-center">
+      <div class="inline-flex items-center justify-center bg-black w-16 h-16 rounded-2xl mb-6 shadow-xl">
+         <span class="text-orange-500 font-bold text-2xl">J</span>
       </div>
+
+      <h1 class="text-4xl font-black text-gray-900 mb-2 tracking-tight"> Se Connecter</h1>
+      <p class="text-gray-500 font-medium mb-10">Accédez à votre compte Jupython</p>
+
+      <button class="w-full flex items-center justify-center gap-3 border border-gray-200 py-3.5 rounded-2xl text-gray-700 font-bold hover:bg-gray-50 transition-all mb-8 shadow-sm">
+        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="w-5 h-5">
+        Continuer avec Google
+      </button>
+
+      <div class="relative flex items-center mb-8">
+        <div class="flex-grow border-t border-gray-100"></div>
+        <span class="px-4 text-gray-400 text-xs font-bold uppercase tracking-widest">Ou avec votre email</span>
+        <div class="flex-grow border-t border-gray-100"></div>
+      </div>
+
+      <form action="/login" method="POST" class="text-left space-y-5">
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 ml-1">Messagerie électronique</label>
+          <div class="relative">
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">✉️</span>
+            <input type="email" placeholder="votre.email@exemple.cd" required
+                   class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 ml-1">Mot de passe</label>
+          <div class="relative">
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔒</span>
+            <input type="password" placeholder="••••••••" required
+                   class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-orange-500 text-white font-black py-4 rounded-2xl shadow-xl shadow-orange-500/40 hover:bg-orange-600 hover:-translate-y-1 transition-all">
+          Connexion
+        </button>
+      </form>
+
+      <p class="mt-8 text-gray-500 font-medium">
+        Pas encore de compte ? <a href="register.html" class="text-orange-500 font-bold hover:underline">Créer un compte</a>
+      </p>
     </div>
   </main>
 
-  <footer>
-    <div>
-      <h3>Jupython</h3>
-      <a href="../about.html">À propos</a>
-      <a href="../projects.html">Projets</a>
-    </div>
-    <div>
-      <h3>Academy</h3>
-      <a href="register.html">Inscription</a>
-      <a href="../rankings.html">Classements</a>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <a href="../contact.html">Nous contacter</a>
+  <footer class="bg-black pt-10 pb-6 px-6 border-t border-gray-900">
+    <div class="text-center text-gray-600 text-xs">
+      © Jupython 2025. Tous droits réservés.
     </div>
   </footer>
+
 </body>
 </html>
