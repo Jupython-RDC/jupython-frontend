@@ -58,10 +58,15 @@ a:hover, a:focus {
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn-primary:hover, .btn-primary:focus {
   background-color: #ff9933;
   color: var(--color-bg-dark);
+}
+.btn-primary:active {
+  background-color: #e67e22;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .form-container {
@@ -86,6 +91,7 @@ a:hover, a:focus {
 }
 .input-field:focus {
   border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.3);
   outline: none;
 }
 
@@ -103,5 +109,15 @@ a:hover, a:focus {
   }
   h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-primary {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .form-container {
+    width: 90%;
   }
 }

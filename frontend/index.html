@@ -1,10 +1,27 @@
+<!-- Jupython - Page d'accueil principale -->
+<!-- Cette page présente la plateforme Jupython avec sa mission, classements, et actualités -->
 <!doctype html>
 <html lang="fr">
+<!-- Section head : métadonnées et ressources externes -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Jupython - Plateforme de certifications IT en Afrique. Accédez à des formations reconnaissables de Cisco, Microsoft, AWS et plus encore.">
+  <meta name="keywords" content="certification IT, formations en ligne, Afrique, Cisco, Microsoft, AWS, apprentissage numérique">
+  <meta name="author" content="Jupython">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Jupython - L'intelligence numérique au service de l'Afrique">
+  <meta property="og:description" content="Obtenez vos certifications IT reconnues mondialement avec Jupython">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jupython.cd">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jupython - Certifications IT en Afrique">
+  <link rel="canonical" href="https://jupython.cd/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Jupython - L'intelligence numérique au service de l'Afrique</title>
+  <!-- Chargement du framework CSS Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Styles personnalisés pour améliorer l'expérience utilisateur -->
   <style>
     /* Optionnel : ajout d'une transition douce pour le défilement */
     html { scroll-behavior: smooth; }
@@ -13,11 +30,14 @@
 <body class="bg-gray-950 text-white font-sans">
 
   <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-xl border-b border-gray-800">
+    <!-- Conteneur principal de l'en-tête -->
     <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo et nom de la plateforme -->
       <div class="flex items-center gap-3">
         <div class="bg-gradient-to-tr from-orange-400 to-orange-600 text-black font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl shadow-lg shadow-orange-500/20">J</div>
         <span class="text-white font-extrabold text-xl tracking-tight">Jupython</span>
       </div>
+      <!-- Navigation principale (cachée sur mobile) -->
       <nav class="hidden md:flex gap-6 items-center">
         <a href="index.html" class="text-orange-500 font-semibold transition">Accueil</a>
         <a href="about.html" class="text-gray-400 hover:text-orange-400 transition">À propos</a>
@@ -26,40 +46,46 @@
         <a href="rankings.html" class="text-gray-400 hover:text-orange-400 transition">Classements</a>
         <a href="contact.html" class="text-gray-400 hover:text-orange-400 transition">Contact</a>
       </nav>
+      <!-- Bouton de connexion -->
       <a href="academy/login.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-bold shadow-lg hover:bg-orange-600 hover:-translate-y-0.5 transition-all">Connecter</a>
     </div>
   </header>
 
+  <!-- Contenu principal de la page -->
   <main>
+    <!-- Section hero : présentation principale de Jupython -->
     <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 pb-16 px-6">
-  
-  <div class="absolute inset-0 z-0">
-    <div class="absolute inset-0 bg-gray-950/70 z-10"></div> 
-    
-    <img src="images/hero-bg.png" 
-         alt="Background Jupython" 
-         class="w-full h-full object-cover object-center transition-opacity duration-500"
-         onerror="this.style.display='none'"> </div>
-  
-  <div class="relative z-20 max-w-5xl mx-auto text-center">
-    <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight text-white">
-      L'intelligence numérique <br>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
-        au service de l'Afrique
-      </span>
-    </h1>
-    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-md">
-      Rejoignez la première plateforme dédiée aux certifications IT et à l'excellence technologique en RDC.
-    </p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#" class="bg-orange-500 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/40">
-        Commencer maintenant
-      </a>
-      <a href="#articles" class="bg-gray-900/50 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition-all border border-gray-700">
-        Voir les actualités
-      </a>
-    </div>
-  </div>
+
+      <!-- Arrière-plan avec image et overlay -->
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gray-950/70 z-10"></div>
+
+        <img src="images/hero-bg.png"
+             alt="Background Jupython"
+             class="w-full h-full object-cover object-center transition-opacity duration-500"
+             onerror="this.style.display='none'"> </div>
+
+      <!-- Contenu texte principal -->
+      <div class="relative z-20 max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight text-white">
+          L'intelligence numérique <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+            au service de l'Afrique
+          </span>
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+          Rejoignez la première plateforme dédiée aux certifications IT et à l'excellence technologique en RDC.
+        </p>
+        <!-- Boutons d'action principaux -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#" class="bg-orange-500 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/40">
+            Commencer maintenant
+          </a>
+          <a href="#articles" class="bg-gray-900/50 backdrop-blur-sm text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition-all border border-gray-700">
+            Voir les actualités
+          </a>
+        </div>
+      </div>
     </section>
      
     <section class="bg-white py-12 border-y border-gray-200">
@@ -219,7 +245,7 @@
           <p class="text-gray-400 flex-1 text-sm leading-relaxed">Découvrez les meilleures stratégies pour obtenir vos certifications professionnelles et booster votre carrière.</p>
           <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
             <span class="text-xs text-gray-500">Dr Kasongo Muteba</span>
-            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+            <a href="article-certifications.html" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
           </div>
         </article>
 
@@ -229,7 +255,7 @@
           <p class="text-gray-400 flex-1 text-sm leading-relaxed">Les certifications professionnelles peuvent transformer l'avenir de la jeunesse africaine dans le secteur technologique.</p>
           <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
             <span class="text-xs text-gray-500">Marie Kalala</span>
-            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+            <a href="article-afrique.html" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
           </div>
         </article>
 
@@ -239,7 +265,7 @@
           <p class="text-gray-400 flex-1 text-sm leading-relaxed">Découvrez les meilleures plateformes où vous pouvez obtenir des certifications reconnues gratuitement.</p>
           <div class="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
             <span class="text-xs text-gray-500">Jean Mukendi</span>
-            <a href="#" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
+            <a href="article-plateformes.html" class="text-orange-500 font-bold text-sm hover:underline">Lire plus →</a>
           </div>
         </article>
       </div>
@@ -294,5 +320,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
 </body>
 </html>
