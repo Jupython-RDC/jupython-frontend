@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Découvrez nos formations gratuites et payantes en IT. Cisco, Microsoft, AWS, et bien d'autres certifications disponibles.">
+  <meta name="keywords" content="formations IT, certifications gratuites, Cisco, Microsoft, AWS, programmation">
+  <meta name="robots" content="index, follow">
   <title>Formations gratuites & Ressources – Jupython</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -15,13 +18,13 @@
         <span class="text-white font-extrabold text-lg tracking-wide">Jupython</span>
       </div>
       <nav class="flex gap-2 flex-wrap">
-        <a href="/frontend/index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Accueil</a>
-        <a href="/frontend/about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
-        <a href="/frontend/projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
-        <a href="/frontend/academy/login.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Academy</a>
-        <a href="/frontend/rankings.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Classements</a>
-        <a href="/frontend/courses.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Formations</a>
-        <a href="/frontend/contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
+        <a href="index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Accueil</a>
+        <a href="about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
+        <a href="projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
+        <a href="academy/login.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Academy</a>
+        <a href="rankings.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Classements</a>
+        <a href="courses.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Formations</a>
+        <a href="contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
       </nav>
       <a href="/frontend/academy/login.html" class="ml-2 bg-orange-500 text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-orange-600 transition">Connecter</a>
     </div>
@@ -130,7 +133,7 @@
       <h2 class="text-2xl font-bold text-orange-400 mb-6">Cours recommandés</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <!-- Exemple de carte de cours -->
-        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col">
+        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col course-card" data-platform="Cisco" data-domain="Cybersécurité" data-level="Débutant" data-type="Vidéos">
           <img src="https://www.netacad.com/sites/default/files/2021-06/IntroCybersecurity_0.png" alt="Intro Cybersecurity" class="h-16 w-16 object-contain mb-3 mx-auto" />
           <h3 class="font-bold text-lg mb-1">Introduction to Cybersecurity</h3>
           <div class="text-gray-400 text-sm mb-1">Plateforme : Cisco</div>
@@ -158,7 +161,7 @@
             <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg transition">Voir la formation</a>
           </div>
         </div>
-        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col">
+        <div class="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col course-card" data-platform="Coursera" data-domain="IA" data-level="Intermédiaire" data-type="Certificats">
           <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/coursera.ico" alt="Coursera" class="h-16 w-16 object-contain mb-3 mx-auto" />
           <h3 class="font-bold text-lg mb-1">Machine Learning</h3>
           <div class="text-gray-400 text-sm mb-1">Plateforme : Coursera</div>
@@ -215,5 +218,7 @@
     </div>
     <div class="text-center text-gray-500 mt-8">© Jupython 2025. Tous droits réservés.</div>
   </footer>
+
+  <script src="assets/js/courses.js"></script>
 </body>
 </html>
