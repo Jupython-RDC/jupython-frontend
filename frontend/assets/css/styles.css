@@ -4,6 +4,9 @@
   --color-primary: rgb(255, 127, 0);
   --color-card-bg: #1F2937;
   --color-border: #374151;
+  --orange: #FF8F00;
+  --orange-dark: #E07F00;
+  --white: #F5F7FA;
 }
 
 body {

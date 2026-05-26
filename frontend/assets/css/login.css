@@ -1,6 +1,12 @@
 /* ------------------- */
 /* RESET DE BASE       */
 /* ------------------- */
+:root {
+    --orange: #FF8F00;
+    --orange-dark: #E07F00;
+    --white: #F5F7FA;
+}
+
 * {
     margin: 0;
     padding: 0;
