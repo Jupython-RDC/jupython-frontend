@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Classements en temps réel des étudiants Jupython. Découvrez les meilleurs élèves et leurs certifications.">
+  <meta name="keywords" content="classements, étudiants, certifications, leaderboard, Jupython">
+  <meta name="robots" content="index, follow">
   <title>Classements - Jupython</title>
   <link href="assets/css/output.css" rel="stylesheet">
 </head>
@@ -14,25 +17,25 @@
         <span class="text-white font-extrabold text-lg tracking-wide">Jupython</span>
       </div>
       <nav class="flex gap-2 flex-wrap">
-        <a href="/frontend/index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Accueil</a>
-        <a href="/frontend/about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
-        <a href="/frontend/projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
-        <a href="/frontend/academy/login.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Academy</a>
-        <a href="/frontend/rankings.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Classements</a>
-        <a href="/frontend/courses.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Formations</a>
-        <a href="/frontend/contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
+        <a href="index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Accueil</a>
+        <a href="about.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">À propos</a>
+        <a href="projects.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Projets</a>
+        <a href="academy/login.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Academy</a>
+        <a href="rankings.html" class="bg-orange-500 text-white px-3 py-2 rounded font-semibold shadow hover:bg-orange-600 transition">Classements</a>
+        <a href="courses.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Formations</a>
+        <a href="contact.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded transition">Contact</a>
       </nav>
     </div>
   </header>
   <main class="bg-gray-950 min-h-screen py-12 px-4">
     <section class="max-w-5xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-2">Classements</h2>
-      <div class="flex flex-wrap gap-4 justify-center mb-8 mt-8">
+      <div class="flex flex-wrap gap-4 justify-center mb-8 mt-8" id="rankings-page">
         <select class="bg-gray-800 text-gray-200 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
-          <option>Plateforme</option><option>Cisco</option><option>Microsoft</option>
+          <option>Plateforme</option><option>Cisco</option><option>IBM</option><option>Microsoft</option><option>Udemy</option><option>Coursera</option><option>OpenClassrooms</option>
         </select>
         <select class="bg-gray-800 text-gray-200 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
-          <option>Université</option><option>Université A</option>
+          <option>Université</option><option>Unikin</option><option>UPN</option>
         </select>
         <select class="bg-gray-800 text-gray-200 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
           <option>Niveau</option><option>Beginner</option><option>Advanced</option>

@@ -1,16 +1,24 @@
-
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Se Connecter - Jupython</title>
   <link href="../assets/css/output.css" rel="stylesheet">
   <style>
-    body { display: flex; flex-direction: column; min-height: screen; }
-    main { flex-grow: 1; }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: screen;
+    }
+
+    main {
+      flex-grow: 1;
+    }
   </style>
 </head>
+
 <body class="bg-gray-950 text-white font-sans">
 
   <header class="bg-white py-4 px-6 shadow-sm">
@@ -19,7 +27,8 @@
         <div class="bg-black text-white font-bold rounded p-1 w-8 h-8 flex items-center justify-center text-xs">J</div>
         <span class="text-black font-extrabold text-xl group-hover:text-orange-500 transition">Jupython</span>
       </a>
-      <a href="../index.html" class="text-sm text-gray-500 hover:text-orange-500 transition font-semibold">← Retour à l'accueil</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-orange-500 transition font-semibold">← Retour à
+        l'accueil</a>
     </div>
   </header>
 
@@ -31,13 +40,14 @@
 
     <div class="relative z-10 w-full max-w-[480px] bg-white rounded-[2.5rem] shadow-2xl p-10 md:p-14 text-center">
       <div class="inline-flex items-center justify-center bg-black w-16 h-16 rounded-2xl mb-6 shadow-xl">
-         <span class="text-orange-500 font-bold text-2xl">J</span>
+        <span class="text-orange-500 font-bold text-2xl">J</span>
       </div>
 
       <h1 class="text-4xl font-black text-gray-900 mb-2 tracking-tight"> Se Connecter</h1>
       <p class="text-gray-500 font-medium mb-10">Accédez à votre compte Jupython</p>
 
-      <button class="w-full flex items-center justify-center gap-3 border border-gray-200 py-3.5 rounded-2xl text-gray-700 font-bold hover:bg-gray-50 transition-all mb-8 shadow-sm">
+      <button
+        class="w-full flex items-center justify-center gap-3 border border-gray-200 py-3.5 rounded-2xl text-gray-700 font-bold hover:bg-gray-50 transition-all mb-8 shadow-sm">
         <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="w-5 h-5">
         Continuer avec Google
       </button>
@@ -48,13 +58,14 @@
         <div class="flex-grow border-t border-gray-100"></div>
       </div>
 
-      <form action="/login" method="POST" class="text-left space-y-5">
+      <form id="loginForm" class="text-left space-y-5">
         <div>
-          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 ml-1">Messagerie électronique</label>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 ml-1">Messagerie
+            électronique</label>
           <div class="relative">
             <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">✉️</span>
-            <input type="email" placeholder="votre.email@exemple.cd" required
-                   class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
+            <input type="email" name="email" placeholder="votre.email@exemple.cd" required
+              class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
           </div>
         </div>
 
@@ -62,18 +73,20 @@
           <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 ml-1">Mot de passe</label>
           <div class="relative">
             <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔒</span>
-            <input type="password" placeholder="••••••••" required
-                   class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
+            <input type="password" name="password" placeholder="••••••••" required
+              class="w-full bg-gray-50 border border-gray-100 py-4 pl-12 pr-4 rounded-2xl text-gray-900 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none transition-all">
           </div>
         </div>
 
-        <button type="submit" class="w-full bg-orange-500 text-white font-black py-4 rounded-2xl shadow-xl shadow-orange-500/40 hover:bg-orange-600 hover:-translate-y-1 transition-all">
+        <button type="submit"
+          class="w-full bg-orange-500 text-white font-black py-4 rounded-2xl shadow-xl shadow-orange-500/40 hover:bg-orange-600 hover:-translate-y-1 transition-all">
           Connexion
         </button>
       </form>
 
       <p class="mt-8 text-gray-500 font-medium">
-        Pas encore de compte ? <a href="register.html" class="text-orange-500 font-bold hover:underline">Créer un compte</a>
+        Pas encore de compte ? <a href="register.html" class="text-orange-500 font-bold hover:underline">Créer un
+          compte</a>
       </p>
     </div>
   </main>
@@ -86,4 +99,5 @@
 
   <script src="../assets/js/api.js"></script>
 </body>
+
 </html>
